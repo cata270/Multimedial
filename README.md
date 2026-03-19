@@ -26,10 +26,10 @@ Ejercicio 1
 body{
 /* "body" se refiere a todo el contenido visible de la página */
 
-  background-color: pink;
+  background-color: black;
   /* Define que el fondo de toda la página sea blanco */
 
-  color: black;
+  color: pink;
   /* Define que el color del texto sea negro */
 
   margin: 0;
