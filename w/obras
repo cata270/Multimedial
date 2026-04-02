@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>OBRAS</title>
+
+    <style > 
+    h1 {
+      text-align: center;
+      color: aliceblue;
+    }
+        /* Estilo general del cuerpo */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #610F25;
+            margin: 0;
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            width: 60%;
+            margin: auto;
+        }
+
+        /* Sección o bloque */
+        .bloque {
+            background-color: rgb(215, 205, 215);
+            margin: 20px 0;
+            padding: 50px;
+            border-radius: 10px;
+        }
+
+        /* Imagen */
+        .bloque img {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Encabezado */
+        .bloque h2 {
+            margin-top: 10px;
+        }
+
+        /* Texto */
+        .bloque p {
+            line-height: 1.5;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+ 
+ <div class="contenedor">
+
+        <!-- BLOQUE 1 -->
+        <div class="bloque">
+          
+            <h1> Catálogo de obras </h1> <a href="index.html">Página principal</a>
+            <p>
+               
+            </p>
+            
+        </div>
+
+
+    <!-- Contenedor principal -->
+    <div class="contenedor">
+
+        <!-- BLOQUE 1 -->
+        <div class="bloque">
+          <h2>Perrito</h2>
+            <img src="img/perro.jpeg" alt="Descripción de la imagen" width="300">
+            
+            <p>
+                30x40cm, óleo sobre tema
+            </p>
+            <a href="CONTACTO.html">Ir a la página 2 </a> 
+        </div>
+
+        <!-- BLOQUE 2 -->
+        <div class="bloque">
+
+          <h2>Domo</h2>
+
+            <img src="img/domo.jpeg" alt="Descripción de la imagen" width="300">
+            
+            <p>
+                60x80cm , óleo sobre cartón forrado
+            </p>
+        </div>
+
+        <!-- BLOQUE 3 -->
+        <div class="bloque">
+
+          <h2>Lego star wars</h2>
+
+            <img src="img/lego.jpeg" alt="Descripción de la imagen" width="300">
+            
+            <p>
+                30x40cm, óleo sobre lienzo
+            </p>
+        </div>
+
+        <div class="bloque">
+
+          <h2>Rayman </h2>
+            <img src="img/rayman.jpeg" alt="Descripción de la imagen" width="300">
+            
+            <p>
+                60x80cm, óleo sobre lienzo
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
