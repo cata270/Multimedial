@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<title>Inicio</title>
+
+<style>
+
+img { /* Aplica a todas las imágenes */
+  width: 300px; /* Ancho fijo */
+  height: 400px; /* Alto fijo */
+  object-fit: cover; /* Ajusta la imagen sin deformarla (recorta si es necesario) */
+  border: 5px solid rgb(255, 255, 255); /* Borde negro de 5px */
+}
+
+/* Fondo general */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #610F25;
+    margin: 0;
+}
+
+/* Sección principal tipo portada */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Nombre grande */
+h1 {
+    color: pink;
+    font-size: 120px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+}
+
+/* Tarjeta */
+.bloque {
+    background-color: rgb(215, 205, 215);
+    padding: 30px;
+    border-radius: 15px;
+    width: 700px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Imagen */
+.bloque img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Texto */
+.bloque p {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* Botón */
+a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #610F25;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+a:hover {
+    background-color: #8a1c3a;
+    transform: scale(1.05);
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="hero">
+
+    <h1>Catalina Olivares</h1>
+
+    <div class="bloque">
+        <img src="img/petshop.jpeg" alt="Imagen principal">
+
+        <p>
+            Portafolio y catálogo de mis obras.
+        </p>
+
+        <a href="OBRAS.html">VER OBRAS</a>
+    </div>
+
+</div>
+
+</body>
+
+</html>

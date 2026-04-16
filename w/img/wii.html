@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Perrito - Detalle de Obra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #610F25;
+            margin: 0;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .nav-arriba {
+            width: 100%;
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .contenedor-detalle {
+            background-color: rgb(215, 205, 215);
+            color: #333;
+            padding: 30px;
+            border-radius: 15px;
+            max-width: 800px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            margin-bottom: 50px;
+        }
+
+        .contenedor-detalle img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            border: 5px solid white;
+        }
+
+        .info-obra {
+            margin-top: 20px;
+        }
+
+        h1 { color: #470213; margin-bottom: 10px; }
+
+        /* Botones */
+        .btn {
+            display: inline-block;
+            padding: 12px 20px;
+            background-color: #470213;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin: 10px;
+            transition: 0.3s;
+        }
+
+        .btn:hover { background-color: #8a1c3a; }
+
+        .btn-ig {
+            background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="nav-arriba">
+        <a href="obras.html" class="btn">Volver al catálogo</a>
+    </div>
+
+    <div class="contenedor-detalle">
+        <img src="img/wii.jpeg" alt="Obra Perrito">
+        
+        <div class="info-obra">
+            <h1>Wii </h1>
+            <p><strong>Técnica:</strong> Óleo sobre tela</p>
+            <p><strong>Dimensiones:</strong> 70x100cm</p>
+            <p><strong>Año:</strong> 2025</p>
+            <hr>
+            <p>Si te interesa esta obra, puedes consultarme por Instagram o sección contacto.</p>
+            
+            <a href="https://www.instagram.com/catayajuu" class="btn btn-ig" target="_blank">
+                <i class="fab fa-instagram"></i> Consultar por Instagram
+            </a>
+            <a href="CONTACTO.html" class="btn">Contacto</a>
+        </div>
+    </div>
+
+</body>
+</html>
