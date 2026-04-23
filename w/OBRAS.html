@@ -1,158 +1,256 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>OBRAS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo | Catalina Olivares</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+        :root {
+            --primario: #610F25;
+            --secundario: #8a1c3a;
+            --acento: #ffc0cb;
+            --card-bg: rgba(255, 255, 255, 0.07);
+        }
 
-/* Estilo general */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #610F25;
-    margin: 0;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4a0a1c 0%, #1a0309 100%);
+            color: white;
+            margin: 0;
+            line-height: 1.6;
+        }
 
-/* Título */
-.titulo {
-    font-size: 25px;
-    text-align: center;
-    color: rgb(227, 207, 225);
-    padding: 20px;
-}
+        /* Encabezado */
+        .header-section {
+            padding: 60px 20px;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
 
-/* Contenedor general */
-.contenedor {
-    width: 80%;
-    margin: auto;
-}
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            color: var(--acento);
+            margin-bottom: 15px;
+        }
 
-/* Galería en grilla */
-.galeria {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-}
+        .nav-link {
+            color: var(--acento);
+            text-decoration: none;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+            transition: 0.3s;
+        }
 
-/* Tarjetas */
-.bloque {
-    background-color: rgb(215, 205, 215);
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-}
+        .nav-link:hover {
+            border-bottom: 1px solid var(--acento);
+            opacity: 0.8;
+        }
 
-/* Imágenes */
-.bloque img {
-    width: 100%;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
-}
+        /* Contenedor de Galería */
+        .contenedor {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px 80px;
+        }
 
-/* Texto */
-.bloque p {
-    font-size: 14px;
-}
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 40px;
+            animation: fadeInUp 1.2s ease-out;
+        }
 
-/* Botones */
-a {
-    display: inline-block;
-    margin: 30px 20px;
-    padding: 10px 15px;
-    background-color: #470213;
-    color: white;
-    text-decoration: none;
-    border-radius: 7px;
-}
+        /* Tarjetas de Obras */
+        .bloque {
+            background: var(--card-bg);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: left;
+            transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+        }
 
-a:hover {
-    background-color: #8a1c3a;
-}
+        .bloque:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.12);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
 
-/* Footer */
-.footer {
-    text-align: center;
-    margin: 30px;
-}
+        .bloque h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            margin: 20px 0 5px;
+            color: var(--acento);
+        }
 
-</style>
+        /* Imágenes con efecto */
+        .img-wrapper {
+            width: 100%;
+            height: 350px; /* Imágenes más grandes y verticales */
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+        }
+
+        .bloque img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.6s ease;
+        }
+
+        .bloque:hover img {
+            transform: scale(1.1);
+        }
+
+        .bloque p {
+            font-size: 0.85rem;
+            color: #ccc;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        /* Botón de ver detalles */
+        .btn-detalle {
+            display: block;
+            text-align: center;
+            padding: 12px;
+            background: transparent;
+            border: 1px solid var(--acento);
+            color: var(--acento);
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .btn-detalle:hover {
+            background: var(--acento);
+            color: var(--primario);
+        }
+
+        /* Footer y Contacto */
+        .footer {
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .btn-contacto {
+            padding: 15px 40px;
+            background: var(--acento);
+            color: var(--primario);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            transition: 0.3s;
+        }
+
+        .btn-contacto:hover {
+            background: white;
+            box-shadow: 0 0 20px rgba(255, 192, 203, 0.4);
+        }
+
+        /* Animaciones */
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .galeria { grid-template-columns: 1fr; }
+            .img-wrapper { height: 300px; }
+        }
+    </style>
 </head>
 
 <body>
 
-<!-- TÍTULO ARRIBA -->
-<div class="titulo">
+<header class="header-section">
+    <a href="index.html" class="nav-link">← Volver al Inicio</a>
     <h1>Catálogo de Obras</h1>
-    <a href="index.html">Página principal</a>
-</div>
+</header>
 
 <div class="contenedor">
-
-</div>
-
-<div class="contenedor">
-
-    <!-- GALERÍA -->
     <div class="galeria">
 
         <div class="bloque">
+            <div class="img-wrapper">
+                <img src="img/perro.jpeg" alt="Perrito">
+            </div>
             <h2>Perrito</h2>
-            <a href="perrito.html" style="padding:0; background:none; margin:0;"></a>
-            <img src="img/perro.jpeg">
             <p>30x40cm, óleo sobre tela, 2025</p>
-            <a href="perrito.html">Ver detalles</a>
+            <a href="perrito.html" class="btn-detalle">Ver detalles de obra</a>
         </div>
 
         <div class="bloque">
+            <div class="img-wrapper">
+                <img src="img/domo.jpeg" alt="Domo">
+            </div>
             <h2>Domo</h2>
-            <a href="Domo.html" style="padding:0; background:none; margin:0;"></a>
-            <img src="img/domo.jpeg">
             <p>60x80cm, óleo sobre lienzo, 2026</p>
-            <a href="Domo.html">Ver detalles</a>
-
+            <a href="Domo.html" class="btn-detalle">Ver detalles de obra</a>
         </div>
 
         <div class="bloque">
+            <div class="img-wrapper">
+                <img src="img/lego.jpeg" alt="Lego Star Wars">
+            </div>
             <h2>Lego Star Wars</h2>
-            <a href="lego.html" style="padding:0; background:none; margin:0;"></a>
-            <img src="img/lego.jpeg">
             <p>30x40cm, óleo sobre lienzo, 2025</p>
-            <a href="lego.html">Ver detalles</a>
+            <a href="lego.html" class="btn-detalle">Ver detalles de obra</a>
         </div>
 
         <div class="bloque">
+            <div class="img-wrapper">
+                <img src="img/rayman.jpeg" alt="Rayman">
+            </div>
             <h2>Rayman</h2>
-               <a href="Rayman.html" style="padding:0; background:none; margin:0;"></a>
-            <img src="img/rayman.jpeg">
             <p>60x80cm, óleo sobre lienzo, 2026</p>
-            <a href="Rayman.html">Ver detalles</a>
+            <a href="Rayman.html" class="btn-detalle">Ver detalles de obra</a>
         </div>
 
         <div class="bloque">
+            <div class="img-wrapper">
+                <img src="img/petshop.jpeg" alt="Pet Shop">
+            </div>
             <h2>Pet Shop</h2>
-            <a href="petshop.html" style="padding:0; background:none; margin:0;"></a>
-            <img src="img/petshop.jpeg">
             <p>60x80cm, óleo sobre lienzo, 2026</p>
-            <a href="petshop.html">Ver detalles</a>
+            <a href="petshop.html" class="btn-detalle">Ver detalles de obra</a>
         </div>
 
         <div class="bloque">
+            <div class="img-wrapper">
+                <img src="img/wii.jpeg" alt="Wii">
+            </div>
             <h2>Wii</h2>
-            <a href="wii.html" style="padding:0; background:none; margin:0;"></a>
-            <img src="img/wii.jpeg">
             <p>200x140cm, óleo sobre lienzo, 2025</p>
-            <a href="wii.html">Ver detalles</a>
+            <a href="wii.html" class="btn-detalle">Ver detalles de obra</a>
         </div>
 
     </div>
-
 </div>
 
-<!-- CONTACTO ABAJO -->
-<div class="footer">
-    <a href="CONTACTO.html">CONTACTO</a>
-</div>
+<footer class="footer">
+    <a href="CONTACTO.html" class="btn-contacto">CONTACTO</a>
+</footer>
 
 </body>
 </html>
