@@ -1,106 +1,149 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<title>Inicio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalina Olivares | Portafolio</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 
-<style>
+    <style>
+        :root {
+            --primario: #610F25;
+            --secundario: #8a1c3a;
+            --acento: #ffc0cb;
+        }
 
-img { /* Aplica a todas las imágenes */
-  width: 300px; /* Ancho fijo */
-  height: 400px; /* Alto fijo */
-  object-fit: cover; /* Ajusta la imagen sin deformarla (recorta si es necesario) */
-  border: 5px solid rgb(255, 255, 255); /* Borde negro de 5px */
-}
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-/* Fondo general */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #610F25;
-    margin: 0;
-}
+        body {
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(135deg, #4a0a1c 0%, #2e0712 100%);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
 
-/* Sección principal tipo portada */
-.hero {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+        .hero {
+            width: 90%;
+            max-width: 1000px; /* Tarjeta más ancha */
+            margin: 40px auto;
+            animation: fadeIn 1.2s ease-out;
+        }
 
-/* Nombre grande */
-h1 {
-    color: pink;
-    font-size: 120px;
-    margin-bottom: 30px;
-    letter-spacing: 2px;
-}
+        h1 {
+            font-family: 'Playfair Display', serif;
+            color: var(--acento);
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            text-align: center;
+            margin-bottom: 5px;
+        }
 
-/* Tarjeta */
-.bloque {
-    background-color: rgb(215, 205, 215);
-    padding: 30px;
-    border-radius: 15px;
-    width: 700px;
-    text-align: center;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-}
+        .subtitle {
+            text-align: center;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+            color: rgba(255, 192, 203, 0.6);
+        }
 
-/* Imagen */
-.bloque img {
-    width: 100%;
-    border-radius: 10px;
-}
+        /* Tarjeta principal expandida */
+        .bloque {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 25px;
+            padding: 20px; /* Espacio interno reducido para priorizar la imagen */
+            text-align: center;
+            box-shadow: 0 30px 60px rgba(0,0,0,0.5);
+        }
 
-/* Texto */
-.bloque p {
-    margin-top: 15px;
-    font-size: 16px;
-    color: #333;
-}
+        /* Contenedor de imagen mucho más grande */
+        .image-container {
+            width: 100%;
+            height: 63 vh; /* Ocupa el 65% de la altura de la pantalla */
+            min-height: 400px;
+            overflow: hidden;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
 
-/* Botón */
-a {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 12px 20px;
-    background-color: #610F25;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-}
+        .bloque img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Mantiene la proporción sin deformar */
+            transition: transform 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
 
-a:hover {
-    background-color: #8a1c3a;
-    transform: scale(1.05);
-}
+        .bloque:hover img {
+            transform: scale(1.05);
+        }
 
-</style>
+        .content {
+            padding: 10px 20px 20px;
+        }
 
+        .bloque p {
+            font-size: 1.2rem;
+            margin-bottom: 25px;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 18px 50px;
+            background-color: var(--acento);
+            color: var(--primario);
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background-color: white;
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(255, 192, 203, 0.4);
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        /* Ajuste para pantallas pequeñas */
+        @media (max-width: 768px) {
+            .image-container { height: 50vh; }
+            h1 { font-size: 3rem; }
+        }
+    </style>
 </head>
-
 <body>
 
-<div class="hero">
+    <div class="hero">
+        <h1>Catalina Olivares</h1>
+        <p class="subtitle">Portafolio Artístico</p>
 
-    <h1>Catalina Olivares</h1>
+        <div class="bloque">
+            <div class="image-container">
+                <img src="img/petshop.jpeg" alt="Obra de Catalina Olivares">
+            </div>
 
-    <div class="bloque">
-        <img src="img/petshop.jpeg" alt="Imagen principal">
-
-        <p>
-            Portafolio y catálogo de mis obras.
-        </p>
-
-        <a href="OBRAS.html">VER OBRAS</a>
+            <div class="content">
+                <p>Explora la galería completa de mis obras recientes.</p>
+                <a href="OBRAS.html" class="btn">VER CATÁLOGO</a>
+            </div>
+        </div>
     </div>
 
-</div>
-
 </body>
-
 </html>
