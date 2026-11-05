@@ -1,5 +1,7 @@
 # Multimedial
 
+<h2 style="color: F21884;">Taller Multimedial</h2>
+
 ## Taller Multimedial
 
 Ejercicio 1
@@ -75,3 +77,21 @@ MULTIMEDIAL
 
 ```
 ´´´
+resultados pagina web: (file:///C:/Users/Alumno/AppData/Local/Temp/358a3500-6fb5-4c14-8dab-4cd943cbbb60_Multimedial-main.zip.b60/Multimedial-main/w/index.html) 
+
+<h2 style="color: F21884;">UNIDAD 2</h2>
+
+- Ejercicios de TouchDesigner
+
+1. EJERCICIO POINT
+(https://drive.google.com/drive/folders/1RXjnAhnY8FThasf7wC8S2Buh3K1aC-fT?usp=drive_link)
+
+2. EJERCICIO CHROMA
+(https://drive.google.com/drive/folders/1KIwMzy8h9DPyUGpKHLGAr9bqS2PjfHfO?usp=drive_link)
+
+
+3. EJERCICIO LSYSTEM
+(https://drive.google.com/drive/folders/1mdOCyoAijYPCriWuUKnWtIWNY2jgnk-f?usp=drive_link)
+
+4. PROYECTO PERSONAL
+(https://drive.google.com/drive/folders/1ElJLHGy4khFhGKwL20Y4VwAu0fdWv7ty?usp=drive_link)
