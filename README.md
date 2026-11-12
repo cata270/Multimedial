@@ -1,8 +1,9 @@
-# Multimedial
 
-<h2 style="color: F21884;">Taller Multimedial</h2>
 
-## Taller Multimedial
+<h2 style="color: F21884;">TALLER MULTIMEDIAL</h2>
+
+
+<h2 style="color: F21884;">UNIDAD 1 : Página web</h2>
 
 Ejercicio 1
 
@@ -76,10 +77,14 @@ MULTIMEDIAL
 </html>
 
 ```
-´´´
-resultados pagina web: (file:///C:/Users/Alumno/AppData/Local/Temp/358a3500-6fb5-4c14-8dab-4cd943cbbb60_Multimedial-main.zip.b60/Multimedial-main/w/index.html) 
+Ejercicio 2
 
-<h2 style="color: F21884;">UNIDAD 2</h2>
+a href="pagina2.html">Ir a la página 2</a" 
+
+
+<h3 style="color: FCFF00;">Resultados página web</h3> (https://cata270.github.io/Multimedial/w/index.html)  
+
+<h2 style="color: F21884;">UNIDAD 2: Touch Designer</h2>
 
 - Ejercicios de TouchDesigner
 
