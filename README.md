@@ -200,7 +200,7 @@ Finalmente, empecé este proyecto el cual es el desarrollo central de la unidad 
 
 ```
 4. PROYECTO PERSONAL
-
+<img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/gif.gif" width="600" height="300" />
 (https://drive.google.com/drive/folders/1ElJLHGy4khFhGKwL20Y4VwAu0fdWv7ty?usp=drive_link)
 
 ```
