@@ -2,7 +2,7 @@
 
 <h2 style="color: F21884;">TALLER MULTIMEDIAL</h2>
 
-<img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/gif.gif" width="1024" height="550" />
+<img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/gif.gif" width="600" height="300" />
 
 <h2 style="color: F21884;">UNIDAD 1 : Página web</h2>
 
