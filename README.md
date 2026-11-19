@@ -83,6 +83,7 @@ MULTIMEDIAL
 <img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/INDEX.png" width="1024" height="550" />
 
 Jerarquía de títulos y texto (mayor a menor):
+
 ```
 <h1> Título grande
 <h2>
@@ -113,7 +114,9 @@ Insertar imagenesy ajustar tamaño (las imagenes deben ir en la misma carpeta y 
 ### Explicación del estilo (CSS) en mi Catálogo de Obras
 
 Para la parte visual usaré de ejemplo mi página de obras (OBRAS.html)
+
 <img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/OBRAS.png" width="1024" height="550" />
+
 Configuré la tipografía principal (Poppins) y creé un fondo degradado diagonal que va desde un tono burdeo oscuro hacia casi negro, logrando que las pinturas resalten:
 
 ```
@@ -154,6 +157,7 @@ Cada obra está encerrada en una tarjeta con transparencia y un desenfoque de fo
 Para los botones de cada obra, combiné HTML y CSS para que no solo se vean bien, sino que cumplan la función de llevar al usuario a otra página:
 
 <img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/perrito.png" />
+
 ```
 <a href="perrito.html" class="btn-detalle">Ver detalles de obra</a>
 
@@ -185,7 +189,10 @@ css:
 
 - Ejercicios de TouchDesigner
 
-Los primeros tres ejercicios de la unidad funcionaron como mi punto de partida y pruebas para comprender la lógica deL programa y familiarizarme con las herramientas básicas del . A través de ellos comencé a experimentar de forma libre con el tratamiento del color, la manipulación de formas y la integración de imágenes dentro del entorno digital, entendiendo cómo importar y procesar elementos visuales:
+Los primeros tres ejercicios de la unidad funcionaron como mi punto de partida y pruebas para comprender la lógica deL programa y
+familiarizarme con las herramientas básicas del . A través de ellos comencé a experimentar de forma libre con el tratamiento del
+color, la manipulación de formas y la integración de imágenes dentro del entorno digital, entendiendo cómo importar y procesar 
+elementos visuales:
  ```
 1. EJERCICIO POINT
 (https://drive.google.com/drive/folders/1RXjnAhnY8FThasf7wC8S2Buh3K1aC-fT?usp=drive_link)
