@@ -109,7 +109,7 @@ Insertar imagenesy ajustar tamaño (las imagenes deben ir en la misma carpeta y 
 ### Explicación del estilo (CSS) en mi Catálogo de Obras
 
 Para la parte visual usaré de ejemplo mi página de obras (OBRAS.html)
-
+<img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/OBRAS.png" width="1024" height="550" />
 Configuré la tipografía principal (Poppins) y creé un fondo degradado diagonal que va desde un tono burdeo oscuro hacia casi negro, logrando que las pinturas resalten:
 
 ```
