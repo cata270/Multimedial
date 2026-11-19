@@ -89,6 +89,7 @@ Jerarquía de títulos y texto (mayor a menor):
 <h6> 
 <p> párrafo
 ```
+<img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/INDEX.png" width="1024" height="550" />
 
 ### Ejercicio 2
 
