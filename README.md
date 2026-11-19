@@ -194,13 +194,15 @@ Los primeros tres ejercicios de la unidad funcionaron como mi punto de partida y
 3. EJERCICIO LSYSTEM
 (https://drive.google.com/drive/folders/1mdOCyoAijYPCriWuUKnWtIWNY2jgnk-f?usp=drive_link)
 ```
+4. PROYECTO PERSONAL
 Finalmente, empecé este proyecto el cual es el desarrollo central de la unidad y se conecta directamente con mi propuesta personal e investigación teórica sobre interfaces y nostalgia digital.
 
  Mediante el uso de un control de Xbox One, el espectador o usuario puede interactuar directamente con el sistema para generar trazos y pintar en tiempo real. Al mover las manillas del control, se van dibujando líneas de múltiples colores que posteriormente se desvanecen de manera progresiva, permitiendo construir figuras efímeras. Esta propuesta une la lógica de los dispositivos de videojuegos con la estética de las interfaces, explorando la relación entre el control, el registro y  la interactividad.
 
-```
-4. PROYECTO PERSONAL
-(https://drive.google.com/drive/folders/1ElJLHGy4khFhGKwL20Y4VwAu0fdWv7ty?usp=drive_link)
+<img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/gif.gif" width="600" height="300" />
 
 ```
-<img src="https://raw.githubusercontent.com/cata270/Multimedial/refs/heads/main/img/gif.gif" width="600" height="300" />
+
+(https://drive.google.com/drive/folders/1ElJLHGy4khFhGKwL20Y4VwAu0fdWv7ty?usp=drive_link)
+```
+
